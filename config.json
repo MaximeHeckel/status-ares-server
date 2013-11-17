@@ -7,13 +7,34 @@
   },
   "services": [
     {
-      "name": "BLOG", 
-      "label": "BLOG",
-      "check": "http",
-      "host": "chamerling.org", 
-      "port": 80,
-      "path": "/"
+      "name": "Gitlab", 
+      "label": "Gitlab",
+      "check": "https",
+      "host": "git.ares-ensiie.eu", 
+      "port": 443,
+      "path": "/users/sign_in",
+       "options": {
+        "ca": "fs.readFileSync(\"./CA-Ares.crt\")",
+        "requestCert": true,
+        "rejectUnauthorized": false
+      }
+
+    },
+     {
+      "name": "Gitlab", 
+      "label": "Gitlab",
+      "check": "https",
+      "host": "git.ares-ensiie.eu", 
+      "port": 443,
+      "path": "/users/sign_in",
+       "options": {
+        "ca": "fs.readFileSync(\"./CA-Ares.crt\")",
+        "requestCert": true,
+        "rejectUnauthorized": false
+      }
+
     }
+
   ],
   "plugins" : {
     "console" : {
