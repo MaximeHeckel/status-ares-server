@@ -1,5 +1,5 @@
 {
-  "title": "Platform Status Sample",
+  "title": "ARES Services Status",
   "hostname": "0.0.0.0",
   "port": 8080,
   "client": {
@@ -34,7 +34,62 @@
       }
 
     }
+    {
+      "name": "Gitlab", 
+      "label": "Gitlab",
+      "check": "https",
+      "host": "git.ares-ensiie.eu", 
+      "port": 443,
+      "path": "/users/sign_in",
+       "options": {
+        "ca": "fs.readFileSync(\"./CA-Ares.crt\")",
+        "requestCert": true,
+        "rejectUnauthorized": false
+      }
 
+    }
+    {
+      "name": "Gitlab", 
+      "label": "Gitlab",
+      "check": "https",
+      "host": "git.ares-ensiie.eu", 
+      "port": 443,
+      "path": "/users/sign_in",
+       "options": {
+        "ca": "fs.readFileSync(\"./CA-Ares.crt\")",
+        "requestCert": true,
+        "rejectUnauthorized": false
+      }
+
+    }
+    {
+      "name": "Gitlab", 
+      "label": "Gitlab",
+      "check": "https",
+      "host": "git.ares-ensiie.eu", 
+      "port": 443,
+      "path": "/users/sign_in",
+       "options": {
+        "ca": "fs.readFileSync(\"./CA-Ares.crt\")",
+        "requestCert": true,
+        "rejectUnauthorized": false
+      }
+
+    }
+    {
+      "name": "Gitlab", 
+      "label": "Gitlab",
+      "check": "https",
+      "host": "git.ares-ensiie.eu", 
+      "port": 443,
+      "path": "/users/sign_in",
+       "options": {
+        "ca": "fs.readFileSync(\"./CA-Ares.crt\")",
+        "requestCert": true,
+        "rejectUnauthorized": false
+      }
+
+    }
   ],
   "plugins" : {
     "console" : {
