@@ -21,10 +21,10 @@
 
     },
      {
-      "name": "Gitlab", 
-      "label": "Gitlab",
+      "name": "Intranet", 
+      "label": "Intranet",
       "check": "https",
-      "host": "git.ares-ensiie.eu", 
+      "host": "iiens.eu", 
       "port": 443,
       "path": "/users/sign_in",
        "options": {
@@ -35,10 +35,10 @@
 
     },
     {
-      "name": "Gitlab", 
-      "label": "Gitlab",
+      "name": "Openstack", 
+      "label": "Openstack",
       "check": "https",
-      "host": "git.ares-ensiie.eu", 
+      "host": "openstack.ares-ensiie.eu", 
       "port": 443,
       "path": "/users/sign_in",
        "options": {
@@ -49,10 +49,10 @@
 
     },
     {
-      "name": "Gitlab", 
-      "label": "Gitlab",
+      "name": "Chef Server", 
+      "label": "Chef Server",
       "check": "https",
-      "host": "git.ares-ensiie.eu", 
+      "host": "chef.ares-ensiie.eu", 
       "port": 443,
       "path": "/users/sign_in",
        "options": {
@@ -63,10 +63,24 @@
 
     },
     {
-      "name": "Gitlab", 
-      "label": "Gitlab",
+      "name": "PaaS", 
+      "label": "PaaS",
+      "check": "http",
+      "host": "ares-paas.eu", 
+      "port": 80,
+      "path": "/users/sign_in",
+       "options": {
+        "ca": "fs.readFileSync(\"./CA-Ares.crt\")",
+        "requestCert": true,
+        "rejectUnauthorized": false
+      }
+
+    },
+    {
+      "name": "Documentation", 
+      "label": "Documentation",
       "check": "https",
-      "host": "git.ares-ensiie.eu", 
+      "host": "doc.ares-ensiie.eu", 
       "port": 443,
       "path": "/users/sign_in",
        "options": {
@@ -77,10 +91,10 @@
 
     },
     {
-      "name": "Gitlab", 
-      "label": "Gitlab",
+      "name": "Mailing-list", 
+      "label": "Mailing-List",
       "check": "https",
-      "host": "git.ares-ensiie.eu", 
+      "host": "http://listes.ares-ensiie.eu/wws", 
       "port": 443,
       "path": "/users/sign_in",
        "options": {
@@ -90,6 +104,7 @@
       }
 
     }
+
   ],
   "plugins" : {
     "console" : {
