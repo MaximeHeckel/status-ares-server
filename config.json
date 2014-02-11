@@ -33,7 +33,7 @@
         "rejectUnauthorized": false
       }
 
-    }
+    },
     {
       "name": "Gitlab", 
       "label": "Gitlab",
@@ -47,7 +47,7 @@
         "rejectUnauthorized": false
       }
 
-    }
+    },
     {
       "name": "Gitlab", 
       "label": "Gitlab",
@@ -61,7 +61,7 @@
         "rejectUnauthorized": false
       }
 
-    }
+    },
     {
       "name": "Gitlab", 
       "label": "Gitlab",
@@ -75,7 +75,7 @@
         "rejectUnauthorized": false
       }
 
-    }
+    },
     {
       "name": "Gitlab", 
       "label": "Gitlab",
