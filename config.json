@@ -24,9 +24,9 @@
       "name": "Intranet", 
       "label": "Intranet",
       "check": "https",
-      "host": "iiens.eu", 
+      "host": "www.iiens.eu", 
       "port": 443,
-      "path": "/users/sign_in",
+      "path": "/",
        "options": {
         "ca": "fs.readFileSync(\"./CA-Ares.crt\")",
         "requestCert": true,
@@ -40,7 +40,7 @@
       "check": "https",
       "host": "openstack.ares-ensiie.eu", 
       "port": 443,
-      "path": "/users/sign_in",
+      "path": "/",
        "options": {
         "ca": "fs.readFileSync(\"./CA-Ares.crt\")",
         "requestCert": true,
@@ -54,7 +54,7 @@
       "check": "https",
       "host": "chef.ares-ensiie.eu", 
       "port": 443,
-      "path": "/users/sign_in",
+      "path": "/users/login",
        "options": {
         "ca": "fs.readFileSync(\"./CA-Ares.crt\")",
         "requestCert": true,
@@ -66,12 +66,12 @@
       "name": "PaaS", 
       "label": "PaaS",
       "check": "http",
-      "host": "ares-paas.eu", 
+      "host": "about.ares-paas.eu", 
       "port": 80,
-      "path": "/users/sign_in",
+      "path": "/",
        "options": {
         "ca": "fs.readFileSync(\"./CA-Ares.crt\")",
-        "requestCert": true,
+        "requestCert": false,
         "rejectUnauthorized": false
       }
 
@@ -79,13 +79,13 @@
     {
       "name": "Documentation", 
       "label": "Documentation",
-      "check": "https",
+      "check": "http",
       "host": "doc.ares-ensiie.eu", 
-      "port": 443,
-      "path": "/users/sign_in",
+      "port": 80,
+      "path": "/",
        "options": {
         "ca": "fs.readFileSync(\"./CA-Ares.crt\")",
-        "requestCert": true,
+        "requestCert": false,
         "rejectUnauthorized": false
       }
 
@@ -93,13 +93,13 @@
     {
       "name": "Mailing-list", 
       "label": "Mailing-List",
-      "check": "https",
-      "host": "http://listes.ares-ensiie.eu/wws", 
+      "check": "http",
+      "host": "http://listes.ares-ensiie.eu", 
       "port": 443,
-      "path": "/users/sign_in",
+      "path": "/",
        "options": {
         "ca": "fs.readFileSync(\"./CA-Ares.crt\")",
-        "requestCert": true,
+        "requestCert": false,
         "rejectUnauthorized": false
       }
 
